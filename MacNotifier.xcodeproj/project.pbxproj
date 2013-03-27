@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13002A5817031572008DFEF0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13002A5717031572008DFEF0 /* Cocoa.framework */; };
+		13002A6217031572008DFEF0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13002A6017031572008DFEF0 /* InfoPlist.strings */; };
+		13002A6417031572008DFEF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13002A6317031572008DFEF0 /* main.m */; };
+		13002A6817031572008DFEF0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 13002A6617031572008DFEF0 /* Credits.rtf */; };
+		13002A6B17031572008DFEF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13002A6A17031572008DFEF0 /* AppDelegate.m */; };
+		13002A6E17031573008DFEF0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13002A6C17031573008DFEF0 /* MainMenu.xib */; };
+		13002A7617031573008DFEF0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13002A7517031573008DFEF0 /* SenTestingKit.framework */; };
+		13002A7717031573008DFEF0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13002A5717031572008DFEF0 /* Cocoa.framework */; };
+		13002A7F17031573008DFEF0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13002A7D17031573008DFEF0 /* InfoPlist.strings */; };
+		13002A8217031573008DFEF0 /* MacNotifierTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13002A8117031573008DFEF0 /* MacNotifierTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13002A7817031573008DFEF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13002A4C17031572008DFEF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13002A5317031572008DFEF0;
+			remoteInfo = MacNotifier;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13002A5417031572008DFEF0 /* MacNotifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacNotifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13002A5717031572008DFEF0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		13002A5A17031572008DFEF0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		13002A5B17031572008DFEF0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		13002A5C17031572008DFEF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		13002A5F17031572008DFEF0 /* MacNotifier-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacNotifier-Info.plist"; sourceTree = "<group>"; };
+		13002A6117031572008DFEF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		13002A6317031572008DFEF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		13002A6517031572008DFEF0 /* MacNotifier-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacNotifier-Prefix.pch"; sourceTree = "<group>"; };
+		13002A6717031572008DFEF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		13002A6917031572008DFEF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		13002A6A17031572008DFEF0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		13002A6D17031573008DFEF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		13002A7417031573008DFEF0 /* MacNotifierTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacNotifierTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13002A7517031573008DFEF0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		13002A7C17031573008DFEF0 /* MacNotifierTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacNotifierTests-Info.plist"; sourceTree = "<group>"; };
+		13002A7E17031573008DFEF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		13002A8017031573008DFEF0 /* MacNotifierTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacNotifierTests.h; sourceTree = "<group>"; };
+		13002A8117031573008DFEF0 /* MacNotifierTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacNotifierTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13002A5117031572008DFEF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13002A5817031572008DFEF0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13002A7017031573008DFEF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13002A7617031573008DFEF0 /* SenTestingKit.framework in Frameworks */,
+				13002A7717031573008DFEF0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13002A4B17031572008DFEF0 = {
+			isa = PBXGroup;
+			children = (
+				13002A5D17031572008DFEF0 /* MacNotifier */,
+				13002A7A17031573008DFEF0 /* MacNotifierTests */,
+				13002A5617031572008DFEF0 /* Frameworks */,
+				13002A5517031572008DFEF0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		13002A5517031572008DFEF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13002A5417031572008DFEF0 /* MacNotifier.app */,
+				13002A7417031573008DFEF0 /* MacNotifierTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13002A5617031572008DFEF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13002A5717031572008DFEF0 /* Cocoa.framework */,
+				13002A7517031573008DFEF0 /* SenTestingKit.framework */,
+				13002A5917031572008DFEF0 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		13002A5917031572008DFEF0 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13002A5A17031572008DFEF0 /* AppKit.framework */,
+				13002A5B17031572008DFEF0 /* CoreData.framework */,
+				13002A5C17031572008DFEF0 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		13002A5D17031572008DFEF0 /* MacNotifier */ = {
+			isa = PBXGroup;
+			children = (
+				13002A6917031572008DFEF0 /* AppDelegate.h */,
+				13002A6A17031572008DFEF0 /* AppDelegate.m */,
+				13002A6C17031573008DFEF0 /* MainMenu.xib */,
+				13002A5E17031572008DFEF0 /* Supporting Files */,
+			);
+			path = MacNotifier;
+			sourceTree = "<group>";
+		};
+		13002A5E17031572008DFEF0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13002A5F17031572008DFEF0 /* MacNotifier-Info.plist */,
+				13002A6017031572008DFEF0 /* InfoPlist.strings */,
+				13002A6317031572008DFEF0 /* main.m */,
+				13002A6517031572008DFEF0 /* MacNotifier-Prefix.pch */,
+				13002A6617031572008DFEF0 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13002A7A17031573008DFEF0 /* MacNotifierTests */ = {
+			isa = PBXGroup;
+			children = (
+				13002A8017031573008DFEF0 /* MacNotifierTests.h */,
+				13002A8117031573008DFEF0 /* MacNotifierTests.m */,
+				13002A7B17031573008DFEF0 /* Supporting Files */,
+			);
+			path = MacNotifierTests;
+			sourceTree = "<group>";
+		};
+		13002A7B17031573008DFEF0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13002A7C17031573008DFEF0 /* MacNotifierTests-Info.plist */,
+				13002A7D17031573008DFEF0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13002A5317031572008DFEF0 /* MacNotifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13002A8517031573008DFEF0 /* Build configuration list for PBXNativeTarget "MacNotifier" */;
+			buildPhases = (
+				13002A5017031572008DFEF0 /* Sources */,
+				13002A5117031572008DFEF0 /* Frameworks */,
+				13002A5217031572008DFEF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacNotifier;
+			productName = MacNotifier;
+			productReference = 13002A5417031572008DFEF0 /* MacNotifier.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13002A7317031573008DFEF0 /* MacNotifierTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13002A8817031573008DFEF0 /* Build configuration list for PBXNativeTarget "MacNotifierTests" */;
+			buildPhases = (
+				13002A6F17031573008DFEF0 /* Sources */,
+				13002A7017031573008DFEF0 /* Frameworks */,
+				13002A7117031573008DFEF0 /* Resources */,
+				13002A7217031573008DFEF0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13002A7917031573008DFEF0 /* PBXTargetDependency */,
+			);
+			name = MacNotifierTests;
+			productName = MacNotifierTests;
+			productReference = 13002A7417031573008DFEF0 /* MacNotifierTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13002A4C17031572008DFEF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "KISSAKI Inc,";
+			};
+			buildConfigurationList = 13002A4F17031572008DFEF0 /* Build configuration list for PBXProject "MacNotifier" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 13002A4B17031572008DFEF0;
+			productRefGroup = 13002A5517031572008DFEF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13002A5317031572008DFEF0 /* MacNotifier */,
+				13002A7317031573008DFEF0 /* MacNotifierTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13002A5217031572008DFEF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13002A6217031572008DFEF0 /* InfoPlist.strings in Resources */,
+				13002A6817031572008DFEF0 /* Credits.rtf in Resources */,
+				13002A6E17031573008DFEF0 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13002A7117031573008DFEF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13002A7F17031573008DFEF0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13002A7217031573008DFEF0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13002A5017031572008DFEF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13002A6417031572008DFEF0 /* main.m in Sources */,
+				13002A6B17031572008DFEF0 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13002A6F17031573008DFEF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13002A8217031573008DFEF0 /* MacNotifierTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13002A7917031573008DFEF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13002A5317031572008DFEF0 /* MacNotifier */;
+			targetProxy = 13002A7817031573008DFEF0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13002A6017031572008DFEF0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13002A6117031572008DFEF0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		13002A6617031572008DFEF0 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13002A6717031572008DFEF0 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		13002A6C17031573008DFEF0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13002A6D17031573008DFEF0 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		13002A7D17031573008DFEF0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13002A7E17031573008DFEF0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13002A8317031573008DFEF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		13002A8417031573008DFEF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		13002A8617031573008DFEF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacNotifier/MacNotifier-Prefix.pch";
+				INFOPLIST_FILE = "MacNotifier/MacNotifier-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		13002A8717031573008DFEF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacNotifier/MacNotifier-Prefix.pch";
+				INFOPLIST_FILE = "MacNotifier/MacNotifier-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		13002A8917031573008DFEF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MacNotifier.app/Contents/MacOS/MacNotifier";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacNotifier/MacNotifier-Prefix.pch";
+				INFOPLIST_FILE = "MacNotifierTests/MacNotifierTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		13002A8A17031573008DFEF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MacNotifier.app/Contents/MacOS/MacNotifier";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacNotifier/MacNotifier-Prefix.pch";
+				INFOPLIST_FILE = "MacNotifierTests/MacNotifierTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13002A4F17031572008DFEF0 /* Build configuration list for PBXProject "MacNotifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13002A8317031573008DFEF0 /* Debug */,
+				13002A8417031573008DFEF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13002A8517031573008DFEF0 /* Build configuration list for PBXNativeTarget "MacNotifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13002A8617031573008DFEF0 /* Debug */,
+				13002A8717031573008DFEF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		13002A8817031573008DFEF0 /* Build configuration list for PBXNativeTarget "MacNotifierTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13002A8917031573008DFEF0 /* Debug */,
+				13002A8A17031573008DFEF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13002A4C17031572008DFEF0 /* Project object */;
+}
