@@ -8,8 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+#define KEY_PERFIX      (@"-")
 
-@property (assign) IBOutlet NSWindow *window;
+@interface AppDelegate : NSObject <NSApplicationDelegate, NSUserNotificationCenterDelegate>
+
+- (void) setArgs:(NSMutableDictionary * )currentArgsDict;
 
 @end

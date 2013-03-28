@@ -12,11 +12,12 @@
 		13002A6417031572008DFEF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13002A6317031572008DFEF0 /* main.m */; };
 		13002A6817031572008DFEF0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 13002A6617031572008DFEF0 /* Credits.rtf */; };
 		13002A6B17031572008DFEF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13002A6A17031572008DFEF0 /* AppDelegate.m */; };
-		13002A6E17031573008DFEF0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13002A6C17031573008DFEF0 /* MainMenu.xib */; };
 		13002A7617031573008DFEF0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13002A7517031573008DFEF0 /* SenTestingKit.framework */; };
 		13002A7717031573008DFEF0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13002A5717031572008DFEF0 /* Cocoa.framework */; };
 		13002A7F17031573008DFEF0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13002A7D17031573008DFEF0 /* InfoPlist.strings */; };
 		13002A8217031573008DFEF0 /* MacNotifierTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13002A8117031573008DFEF0 /* MacNotifierTests.m */; };
+		13002A8D1703169A008DFEF0 /* MacNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 13002A8C1703169A008DFEF0 /* MacNotifier.m */; };
+		13002A8E1703169A008DFEF0 /* MacNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 13002A8C1703169A008DFEF0 /* MacNotifier.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,13 +43,14 @@
 		13002A6717031572008DFEF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		13002A6917031572008DFEF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		13002A6A17031572008DFEF0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		13002A6D17031573008DFEF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		13002A7417031573008DFEF0 /* MacNotifierTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacNotifierTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13002A7517031573008DFEF0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		13002A7C17031573008DFEF0 /* MacNotifierTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacNotifierTests-Info.plist"; sourceTree = "<group>"; };
 		13002A7E17031573008DFEF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		13002A8017031573008DFEF0 /* MacNotifierTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacNotifierTests.h; sourceTree = "<group>"; };
 		13002A8117031573008DFEF0 /* MacNotifierTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacNotifierTests.m; sourceTree = "<group>"; };
+		13002A8B1703169A008DFEF0 /* MacNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacNotifier.h; sourceTree = "<group>"; };
+		13002A8C1703169A008DFEF0 /* MacNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacNotifier.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +118,6 @@
 			children = (
 				13002A6917031572008DFEF0 /* AppDelegate.h */,
 				13002A6A17031572008DFEF0 /* AppDelegate.m */,
-				13002A6C17031573008DFEF0 /* MainMenu.xib */,
 				13002A5E17031572008DFEF0 /* Supporting Files */,
 			);
 			path = MacNotifier;
@@ -125,6 +126,8 @@
 		13002A5E17031572008DFEF0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				13002A8B1703169A008DFEF0 /* MacNotifier.h */,
+				13002A8C1703169A008DFEF0 /* MacNotifier.m */,
 				13002A5F17031572008DFEF0 /* MacNotifier-Info.plist */,
 				13002A6017031572008DFEF0 /* InfoPlist.strings */,
 				13002A6317031572008DFEF0 /* main.m */,
@@ -226,7 +229,6 @@
 			files = (
 				13002A6217031572008DFEF0 /* InfoPlist.strings in Resources */,
 				13002A6817031572008DFEF0 /* Credits.rtf in Resources */,
-				13002A6E17031573008DFEF0 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +265,7 @@
 			files = (
 				13002A6417031572008DFEF0 /* main.m in Sources */,
 				13002A6B17031572008DFEF0 /* AppDelegate.m in Sources */,
+				13002A8D1703169A008DFEF0 /* MacNotifier.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13002A8217031573008DFEF0 /* MacNotifierTests.m in Sources */,
+				13002A8E1703169A008DFEF0 /* MacNotifier.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,14 +303,6 @@
 				13002A6717031572008DFEF0 /* en */,
 			);
 			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		13002A6C17031573008DFEF0 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				13002A6D17031573008DFEF0 /* en */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 		13002A7D17031573008DFEF0 /* InfoPlist.strings */ = {
