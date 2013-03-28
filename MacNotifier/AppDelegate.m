@@ -17,7 +17,7 @@
 #define VALUE_SPACE         (@" ")
 
 #define KEY_VERSION     (@"-v")
-#define VERSION         (@"0.0.11")
+#define VERSION         (@"0.0.14")
 
 #define NOTIFICATION_KEY_USERNOTIFICATION   (@"NSApplicationLaunchUserNotificationKey")
 
@@ -34,25 +34,20 @@ NSDictionary * argsDict;
     @try {
         NSDictionary * userInfo = aNotification.userInfo;
         if ([userInfo valueForKey:NOTIFICATION_KEY_USERNOTIFICATION]) {
-            NSUserNotification * nt = [userInfo valueForKey:NOTIFICATION_KEY_USERNOTIFICATION];
-            NSLog(@"nt info %@", nt.userInfo);
-            
-            
-            
+//            NSUserNotification * nt = [userInfo valueForKey:NOTIFICATION_KEY_USERNOTIFICATION];
+//            NSLog(@"nt info %@", nt.userInfo);
             exit(0);
         }
         
         NSAssert1([argsDict valueForKey:KEY_TITLE], @"%@ title required", KEY_TITLE);
-        NSAssert1([argsDict valueForKey:KEY_SUBTITLE], @"%@ subtitle required", KEY_SUBTITLE);
         NSAssert1([argsDict valueForKey:KEY_MESSAGE], @"%@ message required", KEY_MESSAGE);
         
         if ([argsDict valueForKey:KEY_VERSION]) NSLog(@"version %@", VERSION);
         
+
+        
         NSMutableDictionary * options = [NSMutableDictionary dictionary];
-        options[@"bundleID"] = @"activate!!!";
-    //    options[@"groupID"]  = defaults[@"group"];
-    //    options[@"command"]  = defaults[@"execute"];
-    //    options[@"open"]     = defaults[@"open"];
+        options[@"info"] = @"activate!!!";
         
         NSUserNotification * newUserNotification = [NSUserNotification new];
         newUserNotification.title = argsDict[KEY_TITLE];
@@ -63,7 +58,6 @@ NSDictionary * argsDict;
         
         newUserNotification.userInfo = options;
         
-        newUserNotification.soundName = NSUserNotificationDefaultSoundName;
         if (argsDict[KEY_SOUND]) newUserNotification.soundName = argsDict[KEY_SOUND];
         
         
