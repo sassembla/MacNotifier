@@ -17,7 +17,7 @@
 #define VALUE_SPACE         (@" ")
 
 #define KEY_VERSION     (@"-v")
-#define VERSION         (@"0.0.9")
+#define VERSION         (@"0.0.11")
 
 #define NOTIFICATION_KEY_USERNOTIFICATION   (@"NSApplicationLaunchUserNotificationKey")
 
@@ -36,6 +36,9 @@ NSDictionary * argsDict;
         if ([userInfo valueForKey:NOTIFICATION_KEY_USERNOTIFICATION]) {
             NSUserNotification * nt = [userInfo valueForKey:NOTIFICATION_KEY_USERNOTIFICATION];
             NSLog(@"nt info %@", nt.userInfo);
+            
+            
+            
             exit(0);
         }
         
@@ -44,8 +47,7 @@ NSDictionary * argsDict;
         NSAssert1([argsDict valueForKey:KEY_MESSAGE], @"%@ message required", KEY_MESSAGE);
         
         if ([argsDict valueForKey:KEY_VERSION]) NSLog(@"version %@", VERSION);
-            
-        // execution情報を保持しておき、クリックされたら実行する。フォーカスとかかなあ。
+        
         NSMutableDictionary * options = [NSMutableDictionary dictionary];
         options[@"bundleID"] = @"activate!!!";
     //    options[@"groupID"]  = defaults[@"group"];
@@ -71,8 +73,6 @@ NSDictionary * argsDict;
     }
     @catch (NSException * e) {
         NSLog(@"error:%@", e);
-    }
-    @finally {
         exit(0);
     }
 }
@@ -80,7 +80,7 @@ NSDictionary * argsDict;
 
 - (void)userNotificationCenter:(NSUserNotificationCenter *)center didDeliverNotification:(NSUserNotification * )notification
 {
-//    exit(0);
+    exit(0);
 }
 
 
